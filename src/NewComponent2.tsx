@@ -1,6 +1,20 @@
 import React from 'react';
 
-export const NewComponent2 = () => {
+export type NewComponent2Type = {
+    money: Array<MoneyType>
+    currentMoney: Array<MoneyType
+    onClickFilterHandler:()=>void
+}
+
+type MoneyType = {
+    banknots: string
+    value: number
+    number: string
+}
+
+
+
+export const NewComponent2 = (props: NewComponent2Type) => {
     return (
         <>
             <ul>

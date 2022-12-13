@@ -5,6 +5,7 @@ import {Button} from './Button';
 
 type FilterType = 'all'| 'Dollars'| 'RUBLS'
 
+
 function App() {
     const [money, setMoney] = useState([
         { banknots: 'Dollars', value: 100, number: ' a1234567890' },
@@ -31,7 +32,11 @@ setFilter(nameButton)
 
     return (
 <>
-    <NewComponent2/>
+    <NewComponent2
+        currentMoney={currentMoney}
+        filter = {filter}
+    />
+
 </>
 )
 
